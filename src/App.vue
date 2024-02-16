@@ -1,26 +1,24 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import DarkModeSelector from '@/components/DarkModeSelector.vue'
+import { RouterView } from 'vue-router'
+import ThemeSelector from '@/components/ThemeSelector.vue'
+import NavItem from '@/components/NavItem.vue'
 </script> 
 
 <template>
   <div
-    class="w-screen h-screen bg-gradient-to-b from-slate-200 to-zinc-200 dark:from-slate-800 dark:to-zinc-800"
+    class="flex flex-col p-2 w-screen h-screen bg-gradient-to-b from-white to-zinc-300 dark:from-slate-800 dark:to-zinc-800"
   >
-    <header class="flex h-10 max-w-md w-full">
-      <div>
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-        </nav>
-      </div>
+    <header class="flex flex-row h-fit max-w-md w-full">
+      <nav class="flex grow overflow-scroll">
+        <NavItem to="/">Home</NavItem>
+        <NavItem to="/about/">About</NavItem>
+      </nav>
+      <ThemeSelector> </ThemeSelector>
     </header>
 
-    <DarkModeSelector> </DarkModeSelector>
-
-
-
-    <RouterView />
+    <main class="m-2">
+      <RouterView />
+    </main>
   </div>
 </template>
 
