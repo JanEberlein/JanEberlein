@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="p-2 m-2 rounded-md ring-2 ring-transparent active:ring-amber-400 ring-offset-2 ring-offset-slate-100 dark:ring-offset-slate-700">
-    <RouterLink :to="props.to" class="px-2"><slot></slot></RouterLink>
+  <div class="box-rounded m-2">
+    <RouterLink :to="props.to"><slot></slot></RouterLink>
   </div>
 </template>
