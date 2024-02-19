@@ -1,10 +1,8 @@
 <script setup>
-  import CardItem from '@/components/CardItem.vue'
+import CardItem from '@/components/CardItem.vue'
 </script>
 
 <template>
   <main>Main</main>
-  <CardItem>
-    Test
-  </CardItem>
+  <CardItem> Test </CardItem>
 </template>

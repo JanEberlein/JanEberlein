@@ -2,7 +2,7 @@
 import { RouterView } from 'vue-router'
 import ThemeSelector from '@/components/ThemeSelector.vue'
 import NavItem from '@/components/NavItem.vue'
-</script> 
+</script>
 
 <template>
   <div

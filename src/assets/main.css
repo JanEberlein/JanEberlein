@@ -4,12 +4,12 @@
 
 @layer components {
   .box-rounded {
-    @apply p-2 px-4 rounded-md ring-2 ring-transparent active:ring-amber-400 ring-offset-2 ring-offset-slate-100 dark:ring-offset-slate-700
+    @apply p-2 px-4 rounded-md ring-2 ring-transparent active:ring-amber-400 ring-offset-2 ring-offset-slate-100 dark:ring-offset-slate-700;
   }
 
   .bg-gradient-dotted {
     background: radial-gradient(1px, var(--tw-gradient-stops));
     background-size: 16px 16px;
-    @apply bg-repeat
+    @apply bg-repeat;
   }
 }
