@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="box-rounded m-2">
+  <div class="box-rounded">
     <RouterLink :to="props.to"><slot></slot></RouterLink>
   </div>
 </template>

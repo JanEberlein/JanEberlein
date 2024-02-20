@@ -6,17 +6,18 @@ import NavItem from '@/components/NavItem.vue'
 
 <template>
   <div
-    class="flex flex-col p-2 w-screen h-screen bg-gradient-to-b from-white to-zinc-300 dark:from-slate-800 dark:to-zinc-800"
+    class="flex flex-col space-y-2 p-2 w-screen h-screen bg-gradient-to-b from-white to-zinc-300 dark:from-slate-800 dark:to-zinc-800"
   >
-    <header class="flex flex-row h-fit max-w-md w-full">
-      <nav class="flex grow overflow-scroll">
+    <header class="flex flex-row h-fit w-full max-w-md self-center">
+      <nav class="flex grow space-x-4 overflow-auto p-2">
         <NavItem to="/">Home</NavItem>
         <NavItem to="/about/">About</NavItem>
+        <NavItem to="/cheatsheet">Cheat Sheet</NavItem>
       </nav>
       <ThemeSelector> </ThemeSelector>
     </header>
 
-    <main class="m-2">
+    <main class="grow max-w-md self-center w-full p-2">
       <RouterView />
     </main>
   </div>
