@@ -8,7 +8,7 @@ import NavItem from '@/components/NavItem.vue'
   <div
     class="flex flex-col space-y-2 p-2 w-screen h-screen bg-gradient-to-b from-white to-zinc-300 dark:from-slate-800 dark:to-zinc-800"
   >
-    <header class="flex flex-row h-fit w-full max-w-md self-center">
+    <header class="flex flex-row h-fit w-full max-w-2xl self-center">
       <nav class="flex grow space-x-4 overflow-auto p-2">
         <NavItem to="/">Home</NavItem>
         <NavItem to="/about/">About</NavItem>
@@ -17,7 +17,7 @@ import NavItem from '@/components/NavItem.vue'
       <ThemeSelector> </ThemeSelector>
     </header>
 
-    <main class="grow max-w-md self-center w-full p-2">
+    <main class="grow max-w-2xl self-center w-full p-2">
       <RouterView />
     </main>
   </div>
