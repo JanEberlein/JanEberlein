@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "key": "minesweeper",
+      "author": "Jan Eberlein",
+      "date": "2024-02-13",
+      "title": "Minesweeper",
+      "description": "I created a simple version of the classic game 'minesweeper' with vue to get back into coding",
+      "linkTo": "https://minesweeper.janeberlein.de/",
+      "backgroundImage": "",
+      "tags": []
+    },
+    {
+      "key": "homepage",
+      "author": "Jan Eberlein",
+      "date": "2024-02-21",
+      "title": "Homepage",
+      "description": "This page. A little cyber home on the interwebs.",
+      "linkTo": "https://janeberlein.de",
+      "backgroundImage": "",
+      "tags": []
+    }
+  ]
+}
