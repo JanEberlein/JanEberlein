@@ -32,7 +32,7 @@ function click(){
 </script>
 
 <template>
-  <div class="relative flex flex-col justify-between pb-3 bg-gradient-dotted group min-h-20 w-full box-rounded from-slate-400 overflow-scroll" @click="click">
+  <div class="relative flex flex-col justify-between pb-3 bg-gradient-dotted group min-h-20 w-full box-rounded from-slate-400 overflow-scroll" @click="click" :class="{'cursor-pointer': props.href}">
     <img v-if="props.backgroundImage" :src="backgroundSource" alt="" 
       class="absolute top-0 left-0 w-full h-full object-cover opacity-15 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none"
     >
