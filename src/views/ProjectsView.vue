@@ -14,7 +14,7 @@ entries.value.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTi
 
 <template>
   <div class="h-full w-full flex flex-col space-y-4">
-    <CardItem v-for="entry in entries" :key="entry.key" :background-image="entry.backgroundImage" class="h-52">
+    <CardItem v-for="entry in entries" :key="entry.key" :background-image="entry.backgroundImage" class="h-52" :href="entry.linkTo">
       <h1 class="text-4xl font-extrabold text-right grow">
         {{ entry.title }}
       </h1>
