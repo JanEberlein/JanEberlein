@@ -20,12 +20,10 @@ const backgroundSource = computed(() => {
 </script>
 
 <template>
-  <div class="relative group min-h-20 w-full p-0 box-rounded from-slate-400 overflow-scroll">
+  <div class="relative flex flex-col justify-between pb-3 bg-gradient-dotted group min-h-20 w-full box-rounded from-slate-400 overflow-scroll">
     <img v-if="props.backgroundImage" :src="backgroundSource" alt="" 
-      class="w-full h-full opacity-20 group-hover:opacity-50 object-cover"
+      class="absolute top-0 left-0 w-full h-full object-cover opacity-15 group-hover:opacity-50 transition-opacity duration-300 pointer-events-none"
     >
-    <div class="absolute flex flex-col justify-between top-0 left-0 w-full h-full p-2 px-4 pb-3 bg-gradient-dotted">
-      <slot></slot>
-    </div>
+    <slot></slot>
   </div>
 </template>
