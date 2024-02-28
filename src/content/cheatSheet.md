@@ -2,13 +2,17 @@
 
 ## vue setup
 
-`npm create vue@latest`  
-`cd <project-name>`
+``` console
+npm create vue@latest
+cd <project-name>
+```
 
 ## tailwind setup
 
-`npm install -D tailwindcss postcss autoprefixer`  
-`npx tailwindcss init`
+``` console
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+```
 
 In **src\assets\main.css**:
 
@@ -39,7 +43,9 @@ export default {
 
 ## For touch gestures
 
-`npm install vue3-touch-events`
+```console
+npm install vue3-touch-events
+```
 
 In **src\main.js**:
 
