@@ -4,7 +4,9 @@
 
 @layer components {
   .box-rounded {
-    @apply p-2 px-4 rounded-md ring-2 ring-transparent active:ring-amber-400 ring-offset-2 ring-offset-slate-100 dark:ring-offset-slate-700;
+    @apply p-2 px-4 rounded-md 
+    ring-2 ring-transparent ring-offset-amber-400 ring-offset-2 
+    dark:active:ring-amber-400 active:ring-slate-500;
   }
 
   .bg-gradient-dotted {
